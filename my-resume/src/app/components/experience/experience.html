@@ -1,0 +1,22 @@
+<mat-card class="section-card">
+  <mat-card-header>
+    <mat-card-title>Experience</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="experience-list">
+      @for (exp of experiences(); track exp.title; let last = $last) {
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="experience-title">{{ exp.title }}</h3>
+            <span class="experience-period">{{ exp.period }}</span>
+          </div>
+          <p class="experience-company">{{ exp.company }}</p>
+          <p class="experience-description">{{ exp.description }}</p>
+          @if (!last) {
+            <mat-divider class="section-divider"></mat-divider>
+          }
+        </div>
+      }
+    </div>
+  </mat-card-content>
+</mat-card>

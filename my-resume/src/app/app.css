@@ -1,0 +1,37 @@
+/* Resume Website - Global Styles */
+
+:host {
+  --primary-color: #1f2937;
+  --secondary-color: #374151;
+  --accent-color: #3b82f6;
+  --text-color: #111827;
+  --light-text: #6b7280;
+  --border-color: #e5e7eb;
+  --background: #ffffff;
+  --hover-bg: #f9fafb;
+  display: block;
+  background-color: #f3f4f6;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (max-width: 600px) {
+  .resume-container {
+    padding: 24px 16px;
+  }
+}
+
+@media print {
+  :host {
+    background-color: white;
+  }
+
+  .resume-container {
+    padding: 0;
+    max-width: 100%;
+  }
+}

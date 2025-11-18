@@ -1,0 +1,18 @@
+<mat-card class="section-card">
+  <mat-card-header>
+    <mat-card-title>Education</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="education-list">
+      @for (edu of education(); track edu.institution) {
+        <div class="education-item">
+          <div class="education-header">
+            <h3 class="education-degree">{{ edu.degree }}</h3>
+            <span class="education-year">{{ edu.year }}</span>
+          </div>
+          <p class="education-institution">{{ edu.institution }}</p>
+        </div>
+      }
+    </div>
+  </mat-card-content>
+</mat-card>

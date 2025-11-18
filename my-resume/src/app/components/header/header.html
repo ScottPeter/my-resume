@@ -1,0 +1,22 @@
+<mat-card class="header-card">
+  <mat-card-content>
+    <div class="header-info">
+      <h1 class="name">{{ name() }}</h1>
+      <p class="title">{{ title() }}</p>
+      <div class="contact-info">
+        <span class="contact-item">
+          <mat-icon>email</mat-icon>
+          {{ email() }}
+        </span>
+        <span class="contact-item">
+          <mat-icon>phone</mat-icon>
+          {{ phone() }}
+        </span>
+        <span class="contact-item">
+          <mat-icon>location_on</mat-icon>
+          {{ location() }}
+        </span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
